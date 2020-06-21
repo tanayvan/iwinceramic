@@ -1,9 +1,10 @@
 .footer-heading {
-  font-weight: 800;
-  font-size: 2rem;
+  font-weight: 500;
+  font-size: 1.3rem;
   margin: 2rem 0;
   color: white;
 }
+
 .header {
   background-color: black;
   color: white;
@@ -25,8 +26,8 @@ li {
 }
 
 .nav-item {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .nav-link {
   margin-right: 10rem;

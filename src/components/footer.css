@@ -6,13 +6,9 @@
   color: white;
 }
 
-.headerw {
+.header {
   background-color: black;
   color: white;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .header-container {
   display: flex;

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div>
-      <div className="headerw ">
+      <div className="header ">
         <div className="header-container">
           <p className="ml-2">tanayvan@gmail.com</p>
           <p className="ml-5">9714137409</p>

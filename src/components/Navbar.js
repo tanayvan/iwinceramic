@@ -40,6 +40,9 @@ export default function Navbar() {
             <a className="nav-item nav-link" href="#">
               About
             </a>
+            <Link className="nav-item nav-link" to="/contact-us">
+              Contact Us
+            </Link>
           </div>
         </div>
       </nav>

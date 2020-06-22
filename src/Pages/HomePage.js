@@ -8,7 +8,7 @@ export default function HomePage() {
     <Base>
       <div class="container">
         <div class="row mt-5">
-          <div class="col-lg-6">
+          <div class="col-lg-6 mt-5">
             <h1 class="display-5">Best Tile Manufacturer in India</h1>
             <p>
               The Company carries the vision to cater world class Parking Tiles.

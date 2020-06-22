@@ -19,7 +19,6 @@ export default function EnquiryForm() {
         <form>
           <h1>Send Your Enquiry</h1>
           <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
             <input
               type="email"
               class="form-control"
@@ -31,7 +30,6 @@ export default function EnquiryForm() {
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
             <input
               type="email"
               class="form-control"
@@ -43,7 +41,6 @@ export default function EnquiryForm() {
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Phone No</label>
             <input
               type="text"
               class="form-control"
@@ -54,7 +51,6 @@ export default function EnquiryForm() {
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Price List</label>
             <input
               type="text"
               class="form-control"

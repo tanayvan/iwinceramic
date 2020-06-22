@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -10,12 +11,12 @@ export default function Navbar() {
           <p className="ml-2">9714137409</p>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand ml-5" href="#">
+      <nav className="navbar navbar-expand-lg navbar-light ">
+        <a className="navbar-brand ml-5" href="#">
           Iwin Ceramic
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
@@ -23,20 +24,20 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">
-              Home <span class="sr-only">(current)</span>
-            </a>
-            <a class="nav-item nav-link" href="#">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav ml-auto">
+            <Link className="nav-item nav-link active" to="/">
+              Home <span className="sr-only">(current)</span>
+            </Link>
+            <a className="nav-item nav-link" href="#">
               Products
             </a>
-            <a class="nav-item nav-link" href="#">
+            <a className="nav-item nav-link" href="#">
               We Are
             </a>
-            <a class="nav-item nav-link" href="#">
+            <a className="nav-item nav-link" href="#">
               About
             </a>
           </div>

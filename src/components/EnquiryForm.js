@@ -1,77 +1,84 @@
 import React, { useState } from "react";
 
 export default function EnquiryForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [pricelist, setPricelist] = useState("");
-  const [details, setDetials] = useState("");
-  const handleChange = (e) => {
-    console.log(e.target.value);
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    pricelist: "",
+    details: "",
+  });
+  const { name, email, phone, pricelist, details } = values;
+  const handleChange = (name) => (e) => {
+    setValues({ ...values, [name]: e.target.value });
   };
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("Clicked");
+    console.log(values);
   };
   return (
     <div>
-      <div class="form-container p-5">
+      <div className="form-container p-5">
         <form>
           <h1>Send Your Enquiry</h1>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter your name"
               name="name"
-              onChange={handleChange}
+              onChange={handleChange("name")}
             />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter your email"
-              onChange={handleChange}
+              onChange={handleChange("email")}
               name="email"
             />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
               placeholder="Enter your phone number"
-              onChange={handleChange}
+              onChange={handleChange("phone")}
               name="phone"
             />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
               placeholder="Enter the details for price list"
-              onChange={handleChange}
+              onChange={handleChange("pricelist")}
               name="pricelist"
             />
-            <div class="form-group mt-3">
+            <div className="form-group mt-3">
               <textarea
-                class="form-control"
+                className="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
                 placeholder="Enter your enquiry details"
-                onChange={handleChange}
+                onChange={handleChange("details")}
                 name="details"
               ></textarea>
             </div>
           </div>
 
-          <button type="submit" class="btn btn-dark my-3" onClick={handleClick}>
+          <button
+            type="submit"
+            className="btn btn-dark my-3"
+            onClick={handleClick}
+          >
             Send
           </button>
         </form>

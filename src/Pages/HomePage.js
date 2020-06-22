@@ -22,7 +22,7 @@ export default function HomePage() {
             </p>
             <button className="btn btn-outline-dark">Know More</button>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mt-5">
             <div className="px-5">
               <img
                 src={banner}

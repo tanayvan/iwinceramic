@@ -1,3 +1,4 @@
+/* Footer  */
 .footer-heading {
   font-weight: 500;
   font-size: 1.3rem;
@@ -21,6 +22,10 @@ li {
   color: white;
   width: 100%;
 }
+ul li {
+  margin-left: 10px;
+}
+/* navbar */
 .navbar-light {
   box-shadow: 0 5px 5px -6px #999;
 }
@@ -38,11 +43,23 @@ li {
 .nav-link:hover {
   border-bottom: 2px solid black;
 }
-ul li {
-  margin-left: 10px;
-}
 @media only screen and (max-width: 600px) {
   .header-container {
     flex-direction: column;
   }
+}
+
+/* enquiry form */
+.enquiry-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.enquiry-text {
+  font-size: 1.5rem;
+}
+.form-container {
+  background-color: #fafafa;
+  width: 100%;
 }

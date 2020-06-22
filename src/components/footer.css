@@ -6,9 +6,13 @@
   color: white;
 }
 
-.header {
+.headerw {
   background-color: black;
   color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-container {
   display: flex;
@@ -18,7 +22,7 @@ li {
 }
 
 .myfooter {
-  background-color: black;
+  background-color: rgb(39, 39, 39);
   color: white;
   width: 100%;
 }
@@ -32,16 +36,17 @@ ul li {
 
 .nav-item {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .nav-link {
-  margin-right: 3.5rem;
+  margin-right: 1.5rem;
   transition: all ease-in-out 0.1s;
-  border-bottom: 0 solid black;
+  border-bottom: 1px solid transparent;
+  padding-left: 0;
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 @media only screen and (max-width: 600px) {
   .header-container {
@@ -53,7 +58,7 @@ ul li {
 .enquiry-form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .enquiry-text {
@@ -62,4 +67,8 @@ ul li {
 .form-container {
   background-color: #fafafa;
   width: 100%;
+}
+.copyright {
+  font-size: 0.8rem;
+  margin: 10px;
 }

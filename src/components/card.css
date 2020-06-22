@@ -6,7 +6,6 @@
 .tiles {
   display: flex;
   flex-direction: column;
-
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -14,4 +13,7 @@
   margin: 20px;
   margin-bottom: 40px;
   border: 0.5px solid #dfdfdf;
+}
+.text-container {
+  height: 130px;
 }

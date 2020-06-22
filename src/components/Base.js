@@ -8,7 +8,7 @@ export default function Base({ children }) {
     <>
       <Navbar />
       {children}
-      <div className="container-fluid my-5">
+      <div className="container my-5">
         <div className="row">
           <div className="col-lg-6 enquiry-form-container col-12">
             <div className="">
@@ -24,7 +24,7 @@ export default function Base({ children }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-12">
+          <div className="col-lg-6 col-12" style={{ paddingRight: 50 }}>
             <EnquiryForm />
           </div>
         </div>

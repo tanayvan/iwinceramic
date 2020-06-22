@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div>
-      <div className="header">
+      <div className="headerw ">
         <div className="header-container">
           <p className="ml-2">tanayvan@gmail.com</p>
-          <p className="ml-2">9714137409</p>
+          <p className="ml-5">9714137409</p>
         </div>
       </div>
       <nav className="navbar navbar-expand-lg navbar-light ">

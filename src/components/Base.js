@@ -24,7 +24,7 @@ export default function Base({ children }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-12" style={{ paddingRight: 50 }}>
+          <div className="col-lg-6 col-12">
             <EnquiryForm />
           </div>
         </div>

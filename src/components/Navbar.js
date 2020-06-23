@@ -8,8 +8,12 @@ export default function Navbar() {
     <div>
       <div className="header ">
         <div className="header-container">
-          <p className="ml-2">tanayvan@gmail.com</p>
-          <p className="ml-2">9714137409</p>
+          <p>
+            <a className="ml-4" href="mailto:info@iwinceramic.com">
+              info@iwinceramic.com
+            </a>
+            <a className="ml-4">9714137409</a>
+          </p>
         </div>
       </div>
       <nav className="navbar navbar-expand-lg navbar-light ">

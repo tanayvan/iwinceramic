@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
 
+import logo from "../assets/logo.png";
 export default function Navbar() {
   return (
     <div>
@@ -12,9 +13,15 @@ export default function Navbar() {
         </div>
       </div>
       <nav className="navbar navbar-expand-lg navbar-light ">
-        <a className="navbar-brand ml-5" href="#">
-          Iwin Ceramic
-        </a>
+        <Link className="navbar-brand ml-5" to="/">
+          <img
+            src={logo}
+            alt=""
+            style={{
+              height: "5rem",
+            }}
+          />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

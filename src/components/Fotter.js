@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -62,11 +63,11 @@ const Footer = () => {
 
           <div className="col-lg-3 col-md-6">
             <h5 className="footer-heading">CONTACT US</h5>
-            <p>info@iwinceramic.com</p>
-            <p>
-              +91 98252 89599 <br />
-              +91 96128 33333
-            </p>
+            <a href="mailto:info@iwinceramic.com">info@iwinceramic.com</a>
+            <br />
+            <a href="tel:+919825289599">+9198252 89599</a>
+            <br />
+            <a href="tel:+919612833333">+919612833333</a>
           </div>
         </div>
       </div>

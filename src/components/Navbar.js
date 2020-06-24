@@ -38,9 +38,26 @@ export default function Navbar() {
             <Link className="nav-item nav-link active" to="/">
               Home <span className="sr-only">(current)</span>
             </Link>
-            <a className="nav-item nav-link" href="#">
-              Products
-            </a>
+            <div class="dropdown show">
+              <a
+                class="nav-item nav-link dropdown-toggle"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+              >
+                Product
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">
+                  Porcelian/Vitrified Tiles
+                </a>
+                <a class="dropdown-item" href="#">
+                  Ceramic Tiles
+                </a>
+              </div>
+            </div>
             <a className="nav-item nav-link" href="#">
               We Are
             </a>

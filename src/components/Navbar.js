@@ -9,10 +9,12 @@ export default function Navbar() {
       <div className="header ">
         <div className="header-container">
           <p>
-            <a className="ml-4" href="mailto:info@iwinceramic.com">
+            <a className="ml-3" href="mailto:info@iwinceramic.com">
               info@iwinceramic.com
             </a>
-            <a className="ml-4">9714137409</a>
+            <a className="ml-3" href="tel:+919612833333">
+              9612833333
+            </a>
           </p>
         </div>
       </div>
@@ -65,9 +67,9 @@ export default function Navbar() {
             <a className="nav-item nav-link" href="#">
               We Are
             </a>
-            <a className="nav-item nav-link" href="#">
+            <Link className="nav-item nav-link" to="/about-us">
               About
-            </a>
+            </Link>
             <Link className="nav-item nav-link" to="/contact-us">
               Contact Us
             </Link>

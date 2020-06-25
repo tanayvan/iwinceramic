@@ -2,42 +2,25 @@ import React from "react";
 import Base from "../components/Base";
 
 import office from "../assets/companyOffice.jpg";
+import { useTranslation } from "react-i18next";
 
 export default function AboutUs() {
+  const { t, i18n } = useTranslation();
   return (
     <Base>
       <div className="container">
         <div className="row">
           <div class="col-lg-12 my-5">
-            <h1 className="text-center display-4">About Us</h1>
+            <h1 className="text-center display-4">{t("aboutus.label")}</h1>
           </div>
           <div class="col-lg-6">
             <h1>IWIN ceramic</h1>
-            <p className="mt-5">
-              The Company carries the vision to cater world class Parking Tiles.
-              It believes in manufacturing superior quality Parking Tiles with
-              sharp market visualization.
-            </p>
-            <p>
-              The I win Ceramic Company with its track record of many successful
-              years as leading ceramic company is capable to design and
-              manufacture most modern 12x12 Parking Tiles and 12x12 Digital
-              Parking Tiles in this competitive market.
-            </p>
-            <p>
-              The I win Ceramic Company has a huge production capacity which
-              falls in line with high European standards. The I win Ceramic
-              Company has an in-house R & D department, where in continuous
-              research is done in designs and quality, in order to provide value
-              for money to our customers.
-            </p>
-            <p>
-              The I win Ceramic Company has well established dealer network
-              throughout the whole country and it has marked its presence in
-              export market of various countries.
-            </p>
+            <p className="mt-5">{t("aboutusp1")}</p>
+            <p>{t("aboutusp2")}</p>
+            <p>{t("aboutusp3")}</p>
+            <p>{t("aboutusp4")}</p>
             <button type="button" class="btn btn-dark btn-lg mt-5">
-              Download Catalouge
+              {t("downloadcatalouge")}
             </button>
           </div>
           <div class="col-lg-6">

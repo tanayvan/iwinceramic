@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function EnquiryForm() {
+  const { t, i18n } = useTranslation();
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -20,14 +22,14 @@ export default function EnquiryForm() {
     <div>
       <div className="form-container p-5">
         <form>
-          <h1>Send Your Enquiry</h1>
+          <h1>{t("eqsye")}</h1>
           <div className="form-group">
             <input
               type="email"
               className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="Enter your name"
+              placeholder={t("eqname")}
               name="name"
               onChange={handleChange("name")}
             />
@@ -38,7 +40,7 @@ export default function EnquiryForm() {
               className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="Enter your email"
+              placeholder={t("eqemail")}
               onChange={handleChange("email")}
               name="email"
             />
@@ -48,7 +50,7 @@ export default function EnquiryForm() {
               type="text"
               className="form-control"
               id="exampleInputPassword1"
-              placeholder="Enter your phone number"
+              placeholder={t("eqphone")}
               onChange={handleChange("phone")}
               name="phone"
             />
@@ -58,7 +60,7 @@ export default function EnquiryForm() {
               type="text"
               className="form-control"
               id="exampleInputPassword1"
-              placeholder="Enter the details for price list"
+              placeholder={t("eqpricelistdetails")}
               onChange={handleChange("pricelist")}
               name="pricelist"
             />
@@ -67,7 +69,7 @@ export default function EnquiryForm() {
                 className="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
-                placeholder="Enter your enquiry details"
+                placeholder={t("eqdetails")}
                 onChange={handleChange("details")}
                 name="details"
               ></textarea>

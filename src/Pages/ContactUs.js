@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Base from "../components/Base";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Fotter";
+import { useTranslation } from "react-i18next";
 
 export default function ContactUs() {
+  const { t, i18n } = useTranslation();
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -22,7 +24,7 @@ export default function ContactUs() {
   return (
     <div>
       <Navbar />
-      <h1 className="display-5 text-center mt-5">Contact Us</h1>
+      <h1 className="display-5 text-center mt-5">{t("contactus.label")}</h1>
       <div class="container">
         <form className="m-5">
           <div class="form-row">
@@ -31,7 +33,7 @@ export default function ContactUs() {
                 type="email"
                 class="form-control"
                 id="inputEmail4"
-                placeholder="Name"
+                placeholder={t("eqname")}
                 name="name"
                 onChange={handleChange("name")}
               />
@@ -41,7 +43,7 @@ export default function ContactUs() {
                 type="text"
                 class="form-control"
                 id="inputPassword4"
-                placeholder="Email"
+                placeholder={t("eqemail")}
                 name="email"
                 onChange={handleChange("email")}
               />
@@ -53,7 +55,7 @@ export default function ContactUs() {
                 type="text"
                 class="form-control"
                 id="inputEmail4"
-                placeholder="Subject"
+                placeholder={t("subject.label")}
                 name="subject"
                 onChange={handleChange("subject")}
               />
@@ -74,13 +76,13 @@ export default function ContactUs() {
               className="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
-              placeholder="Enter your Message Here"
+              placeholder={t("subject.label")}
               onChange={handleChange("message")}
               name="message"
             ></textarea>
           </div>
           <button type="submit" class="btn btn-dark" onClick={handleClick}>
-            Send Us
+            {t("sendus.label")}
           </button>
         </form>
       </div>

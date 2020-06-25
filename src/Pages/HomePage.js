@@ -4,25 +4,21 @@ import Base from "../components/Base";
 import banner from "../assets/banner.jpg";
 import Tiles from "../components/Card";
 import "../components/footer.css";
+import { useTranslation } from "react-i18next";
 
 export default function HomePage() {
+  const { t, i18n } = useTranslation();
   return (
     <Base>
       <div className="container">
         <div className="row mt-5">
           <div className="col-lg-6 mt-5">
-            <h1 className="display-5">Best Tile Manufacturer in India</h1>
-            <p>
-              The Company carries the vision to cater world className Parking
-              Tiles. It believes in manufacturing superior quality Parking Tiles
-              with sharp market visualization.
-            </p>
-            <p>
-              Get top quality Porcelain tile, Ceramic tile and Vitrified tile in
-              various types, designs and sizes at competitive prices. If you are
-              looking for tile manufacturer in India, we are your best bet.
-            </p>
-            <button className="btn btn-outline-dark">Know More</button>
+            <h1 className="display-5"> {t("introheading.label")}</h1>
+            <p>{t("introp1.label")}</p>
+            <p>{t("introp2.label")}</p>
+            <button className="btn btn-outline-dark">
+              {t("knowmore.label")}
+            </button>
           </div>
           <div className="col-lg-6 mt-5">
             <div className="px-5" style={{ marginTop: 14 }}>
@@ -40,7 +36,9 @@ export default function HomePage() {
       </div>
       {/* our Products */}
       <div className="container mt-5">
-        <h1 className="display-5 text-muted text-center">Our Products</h1>
+        <h1 className="display-5 text-muted text-center">
+          {t("ourproduct.label")}
+        </h1>
         <div className="row my-5 ">
           <div className="col-lg-4 col-md-6">
             <Tiles

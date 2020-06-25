@@ -2,8 +2,10 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Fotter";
 import EnquiryForm from "./EnquiryForm";
+import { useTranslation } from "react-i18next";
 
 export default function Base({ children }) {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <Navbar />
@@ -12,15 +14,15 @@ export default function Base({ children }) {
         <div className="row">
           <div className="col-lg-6 enquiry-form-container col-12">
             <div className="">
-              <h1 className="text-center display-4 mt-5">Get Price List</h1>
+              <h1 className="text-center display-4 mt-5">
+                {t("eqformh1.label")}
+              </h1>
               <div className="text-center mt-5 ">
-                <p className="enquiry-text">
-                  We generally respond within 24 hours.
-                </p>
-                <p className="enquiry-text">100% Response Rate</p>
-                <p className="enquiry-text">For better quotations, include:</p>
-                <p className="enquiry-text">- A self-introduction</p>
-                <p className="enquiry-text">- Special requests, if any</p>
+                <p className="enquiry-text">{t("eqformp1.label")}</p>
+                <p className="enquiry-text"> {t("eqformp2.label")}</p>
+                <p className="enquiry-text"> {t("eqformp3.label")}:</p>
+                <p className="enquiry-text">- {t("eqformp4.label")}</p>
+                <p className="enquiry-text">- {t("eqformp5.label")}</p>
               </div>
             </div>
           </div>

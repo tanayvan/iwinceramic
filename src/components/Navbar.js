@@ -3,7 +3,10 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/logo.png";
+import { useTranslation } from "react-i18next";
+import LaunguageSelector from "./LaunguageSelector";
 export default function Navbar() {
+  const { t, i18n } = useTranslation();
   return (
     <div>
       <div className="header ">
@@ -42,7 +45,7 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ml-auto">
             <Link className="nav-item nav-link active" to="/">
-              Home <span className="sr-only">(current)</span>
+              {t("home.label")} <span className="sr-only">(current)</span>
             </Link>
             <div class="dropdown show">
               <a
@@ -53,25 +56,25 @@ export default function Navbar() {
                 aria-expanded="false"
                 href="#"
               >
-                Product
+                {t("product.label")}
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">
-                  Porcelian/Vitrified Tiles
+                  {t("porceliantiles.label")}
                 </a>
                 <a class="dropdown-item" href="#">
-                  Ceramic Tiles
+                  {t("ceramic.label")}
                 </a>
               </div>
             </div>
             <a className="nav-item nav-link" href="#">
-              We Are
+              {t("weare.label")}
             </a>
             <Link className="nav-item nav-link" to="/about-us">
-              About
+              {t("about.label")}
             </Link>
             <Link className="nav-item nav-link" to="/contact-us">
-              Contact Us
+              {t("contactus.label")}
             </Link>
           </div>
         </div>

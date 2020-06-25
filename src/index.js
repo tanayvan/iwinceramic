@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Routes from "./Routes";
 
+import "./i18n.js";
+
 ReactDOM.render(<Routes />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change

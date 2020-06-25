@@ -1,8 +1,10 @@
 import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className="myfooter mt-5">
       <div className="container">
@@ -17,7 +19,7 @@ const Footer = () => {
           </div>
 
           <div className="col-lg-3 col-md-6">
-            <h5 className="footer-heading">OUR PRODUCTS</h5>
+            <h5 className="footer-heading">{t("ourproduct.label")}</h5>
             <ul>
               <li>
                 <a href="#">Soluble Salt Nano Tile</a>
@@ -44,25 +46,25 @@ const Footer = () => {
           </div>
 
           <div className="col-lg-3 col-md-6">
-            <h5 className="footer-heading">I AM...</h5>
+            <h5 className="footer-heading">{t("weare.label")}</h5>
             <ul>
               <li>
-                <a>Importer</a>
+                <a>{t("importer.label")}</a>
               </li>
               <li>
-                <a>Distributer</a>
+                <a>{t("distributor.label")}</a>
               </li>
               <li>
-                <a>Builder</a>
+                <a>{t("builder.label")}</a>
               </li>
               <li>
-                <a>Home/Office owner</a>
+                <a>{t("homeoffice.label")}</a>
               </li>
             </ul>
           </div>
 
           <div className="col-lg-3 col-md-6">
-            <h5 className="footer-heading">CONTACT US</h5>
+            <h5 className="footer-heading">{t("contactus.label")}</h5>
             <a href="mailto:info@iwinceramic.com">info@iwinceramic.com</a>
             <br />
             <a href="tel:+919825289599">+9198252 89599</a>

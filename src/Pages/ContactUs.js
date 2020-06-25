@@ -65,7 +65,7 @@ export default function ContactUs() {
                 type="text"
                 class="form-control"
                 id="inputPassword4"
-                placeholder={t("eqphone ")}
+                placeholder={t("eqphone")}
                 onChange={handleChange("phone")}
                 name="phone"
               />

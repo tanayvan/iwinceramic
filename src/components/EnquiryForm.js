@@ -17,6 +17,30 @@ export default function EnquiryForm() {
   const handleClick = (e) => {
     e.preventDefault();
     console.log(values);
+    fetch("http://localhost:4000/enquiryform", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: values.name,
+        email: values.email,
+        phone: values.phone,
+        pricelist: values.pricelist,
+        enquiry: values.details,
+      }),
+    })
+      .then((response) => {
+        setValues({
+          name: "",
+          email: "",
+          phone: "",
+          pricelist: "",
+          details: "",
+        });
+        return response.json();
+      })
+      .catch((error) => console.log(error));
   };
   return (
     <div>

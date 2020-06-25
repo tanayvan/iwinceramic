@@ -9,18 +9,6 @@ export default function Navbar() {
   const { t, i18n } = useTranslation();
   return (
     <div>
-      <div className="header ">
-        <div className="header-container">
-          <p>
-            <a className="ml-3" href="mailto:info@iwinceramic.com">
-              info@iwinceramic.com
-            </a>
-            <a className="ml-3" href="tel:+919612833333">
-              9612833333
-            </a>
-          </p>
-        </div>
-      </div>
       <nav className="navbar navbar-expand-lg navbar-light ">
         <Link className="navbar-brand ml-5" to="/">
           <img

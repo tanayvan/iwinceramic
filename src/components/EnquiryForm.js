@@ -105,7 +105,7 @@ export default function EnquiryForm() {
             className="btn btn-dark my-3"
             onClick={handleClick}
           >
-            Send
+            {t("sendus.label")}
           </button>
         </form>
       </div>

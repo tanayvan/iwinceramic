@@ -11,6 +11,9 @@ export default function LaunguageSelector() {
         <option value="en">English</option>
         <option value="ch">Chinese</option>
         <option value="sp">Spanish</option>
+        <option value="ar">Arabic</option>
+        <option value="fr">French</option>
+        <option value="rs">Russian</option>
       </select>
     </div>
   );

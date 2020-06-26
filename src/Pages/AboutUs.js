@@ -10,8 +10,13 @@ export default function AboutUs() {
     <Base>
       <div className="container">
         <div className="row">
-          <div class="col-lg-12 my-5">
-            <h1 className="text-center display-4">{t("aboutus.label")}</h1>
+          <div
+            class="col-lg-12 my-5"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <h1 className="text-center display-4 heading">
+              {t("aboutus.label")}
+            </h1>
           </div>
           <div class="col-lg-6">
             <h1>IWIN ceramic</h1>

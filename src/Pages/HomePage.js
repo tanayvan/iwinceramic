@@ -24,10 +24,7 @@ export default function HomePage() {
             <div className="px-5" style={{ marginTop: 14 }}>
               <img
                 src={banner}
-                // style={{
-                //   height: "40vh",
-                //   width: "100%",
-                // }}
+                style={{ filter: "brightness(130%)" }}
                 width={"100%"}
               />
             </div>

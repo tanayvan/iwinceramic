@@ -8,17 +8,8 @@ export default function LaunguageSelector() {
   return (
     <div className="header ">
       <div className="header-container">
-        <p>
-          <a className="ml-3" href="mailto:info@iwinceramic.com">
-            info@iwinceramic.com
-          </a>
-          <a className="ml-3 " href="tel:+919612833333">
-            9612833333
-          </a>
-        </p>
-
-        <div onChange={changeLaunguage} className="ml-3 mb-1">
-          <select id="cars">
+        <div onChange={changeLaunguage} className="ml-3">
+          <select id="cars" style={{ borderRadius: "4px" }}>
             <option value="en">English</option>
             <option value="ch">Chinese</option>
             <option value="sp">Spanish</option>
@@ -27,6 +18,12 @@ export default function LaunguageSelector() {
             <option value="rs">Russian</option>
           </select>
         </div>
+        <a className="ml-3" href="mailto:info@iwinceramic.com">
+          info@iwinceramic.com
+        </a>
+        <a className="ml-3 " href="tel:+919612833333">
+          9612833333
+        </a>
       </div>
     </div>
   );

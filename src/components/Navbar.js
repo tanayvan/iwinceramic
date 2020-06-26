@@ -9,7 +9,7 @@ export default function Navbar() {
   const { t, i18n } = useTranslation();
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light ">
+      <nav className="navbar navbar-expand-lg ">
         <Link className="navbar-brand ml-5" to="/">
           <img
             src={logo}
@@ -20,7 +20,7 @@ export default function Navbar() {
           />
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler navbar-light"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"

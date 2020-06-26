@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t, i18n } = useTranslation();
   return (
-    <div className="myfooter mt-5">
+    <div className="myfooter ">
       <div className="container">
         <div className="row ">
           <div className="col-lg-3 col-md-6">

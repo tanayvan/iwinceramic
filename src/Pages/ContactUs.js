@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Base from "../components/Base";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Fotter";
+import "../components/footer.css";
 import { useTranslation } from "react-i18next";
 
 export default function ContactUs() {
@@ -24,7 +24,9 @@ export default function ContactUs() {
   return (
     <div>
       <Navbar />
-      <h1 className="display-5 text-center mt-5">{t("contactus.label")}</h1>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <h1 className="display-5  mt-5 heading">{t("contactus.label")}</h1>
+      </div>
       <div class="container">
         <form className="m-5">
           <div class="form-row">

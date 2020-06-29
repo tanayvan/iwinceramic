@@ -31,7 +31,7 @@ export default function ContactUs() {
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-8">
             <form className="m-5">
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -92,7 +92,7 @@ export default function ContactUs() {
               </button>
             </form>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="m-5">
               <p>
                 Address - I win Ceramic Corporate Office Pacific Business Park
@@ -121,7 +121,7 @@ export default function ContactUs() {
               <Iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.86482907147!2d70.84853781491582!3d22.84448993504357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598c8f653d3b8b%3A0x9963198fb6fde971!2sPacific%20Business%20Park!5e0!3m2!1sen!2sin!4v1593420623896!5m2!1sen!2sin"
                 width="100%"
-                height="450"
+                height="250"
                 frameborder="0"
                 style="border:0;"
                 allowfullscreen=""

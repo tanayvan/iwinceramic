@@ -193,3 +193,7 @@ ul li {
 .contactus-icon {
   color: black;
 }
+
+button:focus {
+  outline: none;
+}

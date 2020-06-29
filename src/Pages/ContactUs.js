@@ -5,7 +5,14 @@ import "../components/footer.css";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
+import {
+  faInstagram,
+  faFacebook,
+  faTwitter,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 export default function ContactUs() {
   const { t, i18n } = useTranslation();
   const [values, setValues] = useState({
@@ -94,10 +101,11 @@ export default function ContactUs() {
           </div>
           <div class="col-lg-4">
             <div class="m-5">
+              <p style={{ fontWeight: "bold", textAlign: "center" }}>Address</p>
               <p>
-                Address - I win Ceramic Corporate Office Pacific Business Park
-                Second floor Shop No. 249,250,251 8-A National Highway Near
-                Sunora Ceramic Morbi 363642
+                I win Ceramic Corporate Office Pacific Business Park Second
+                floor Shop No. 249,250,251 8-A National Highway Near Sunora
+                Ceramic Morbi 363642
               </p>
               <a href="mailto:info@iwinceramic.com" className="contactus-icon">
                 <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
@@ -114,9 +122,24 @@ export default function ContactUs() {
                 <FontAwesomeIcon className="mr-2" icon={faPhone} />
                 +919612833333
               </a>
+
+              <p className=" mt-4">
+                <Link href="#" className="mr-3 icont">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </Link>
+                <Link href="#" className="mr-3 icont">
+                  <FontAwesomeIcon icon={faFacebook} />
+                </Link>
+                <Link href="#" className="mr-3 icont">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </Link>
+                <Link href="#" className="mr-3 icont">
+                  <FontAwesomeIcon icon={faWhatsapp} />
+                </Link>
+              </p>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-8">
             <div className="p-5 text-center ml-auto m-5">
               <Iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.86482907147!2d70.84853781491582!3d22.84448993504357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598c8f653d3b8b%3A0x9963198fb6fde971!2sPacific%20Business%20Park!5e0!3m2!1sen!2sin!4v1593420623896!5m2!1sen!2sin"

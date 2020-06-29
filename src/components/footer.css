@@ -197,3 +197,9 @@ ul li {
 button:focus {
   outline: none;
 }
+
+/* .contactus-icon */
+.icont {
+  color: black;
+  font-size: xx-large;
+}

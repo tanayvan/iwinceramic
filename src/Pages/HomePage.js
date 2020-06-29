@@ -88,8 +88,8 @@ export default function HomePage() {
         <div className="container">
           <h1 className="display-5 text-muted text-center">We Are</h1>
           <WeAre />
-
-
+        </div>
+      </div>
       {/* 24*7 support */}
       <div class="container my-4">
         <div class="row">

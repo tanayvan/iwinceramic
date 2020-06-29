@@ -4,6 +4,12 @@
   transition: background-color 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .card:hover {
-  background-color: rgb(255, 118, 118);
+  background-color: #fe725e;
+  color: white;
+}
+.muted {
+  color: gray;
+}
+.card:hover .muted {
   color: white;
 }

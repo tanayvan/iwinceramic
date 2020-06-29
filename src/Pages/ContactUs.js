@@ -87,16 +87,6 @@ export default function ContactUs() {
             {t("sendus.label")}
           </button>
         </form>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14707.45253977215!2d70.8514855!3d22.8445526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3af565c37e81a05e!2sI%20win%20Ceramic!5e0!3m2!1sen!2sin!4v1593173744477!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border:0;"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
       </div>
 
       <Footer />

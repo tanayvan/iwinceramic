@@ -14,7 +14,7 @@ function WeAre() {
                 Know more about how to import world-class tiles to your country.
               </p>
               <p class="card-text">
-                <small class="text-muted">know more</small>
+                <small class="muted">Know more</small>
               </p>
             </div>
           </div>
@@ -27,7 +27,7 @@ function WeAre() {
                 Be a part of our ever growing distribution network across India.
               </p>
               <p class="card-text">
-                <small class="text-muted">know more</small>
+                <small class="muted">know more</small>
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ function WeAre() {
                 you.
               </p>
               <p class="card-text">
-                <small class="text-muted">know more</small>
+                <small class="muted">know more</small>
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ function WeAre() {
                 Get your house walls and floor embellished by our tiles.
               </p>
               <p class="card-text">
-                <small class="text-muted">know more</small>
+                <small class="muted">know more</small>
               </p>
             </div>
           </div>

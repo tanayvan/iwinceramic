@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
       </div> */}
       <div className="container">
-        <div className="row mt-5">
+        <div className="row mt-1">
           <div className="col-lg-6 mt-5">
             <h1 className="display-5"> {t("introheading.label")}</h1>
             <p>{t("introp1.label")}</p>
@@ -43,7 +43,9 @@ export default function HomePage() {
       </div>
       {/* our Products */}
       <div className="container mt-5">
-        <h1 className="display-5 text-center">{t("ourproduct.label")}</h1>
+        <h1 className="display-5 text-center text-muted">
+          {t("ourproduct.label")}
+        </h1>
         <div className="row my-5 ">
           <div className="col-lg-4 col-md-6">
             <Tiles

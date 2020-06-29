@@ -6,7 +6,7 @@ function WeAre() {
   return (
     <div>
       <div className="row mt-4 pb-4">
-        <div className="col-3">
+        <div className="col-lg-3">
           <div class="card text-center">
             <div class="card-body">
               <h5 class="card-title">Importer</h5>
@@ -19,7 +19,7 @@ function WeAre() {
             </div>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-lg-3">
           <div class="card text-center">
             <div class="card-body">
               <h5 class="card-title">Distributor</h5>
@@ -32,7 +32,7 @@ function WeAre() {
             </div>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-lg-3">
           <div class="card text-center">
             <div class="card-body">
               <h5 class="card-title">Builder</h5>
@@ -46,7 +46,7 @@ function WeAre() {
             </div>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-lg-3">
           <div class="card text-center">
             <div class="card-body">
               <h5 class="card-title">Home/Office Owner</h5>

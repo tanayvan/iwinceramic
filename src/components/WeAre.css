@@ -1,7 +1,7 @@
 .card {
-  height: 100%;
   background-color: #f8f9fa;
   transition: background-color 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-top: 2rem;
 }
 .card:hover {
   background-color: #fe725e;

@@ -62,6 +62,13 @@ const Navbar = ({ history }) => {
             </div>
             <Link
               className="nav-item nav-link"
+              to="/we-are"
+              style={currentTab(history, "/we-are")}
+            >
+              {t("weare.label")}
+            </Link>
+            <Link
+              className="nav-item nav-link"
               to="/about-us"
               style={currentTab(history, "/about-us")}
             >

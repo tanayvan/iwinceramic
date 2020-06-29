@@ -3,7 +3,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Fotter";
 import "../components/footer.css";
 import { useTranslation } from "react-i18next";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Iframe from "react-iframe";
 export default function ContactUs() {
   const { t, i18n } = useTranslation();
   const [values, setValues] = useState({
@@ -28,65 +30,107 @@ export default function ContactUs() {
         <h1 className="display-5  mt-5 heading">{t("contactus.label")}</h1>
       </div>
       <div class="container">
-        <form className="m-5">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <input
-                type="email"
-                class="form-control"
-                id="inputEmail4"
-                placeholder={t("eqname")}
-                name="name"
-                onChange={handleChange("name")}
-              />
-            </div>
-            <div class="form-group col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                id="inputPassword4"
-                placeholder={t("eqemail")}
-                name="email"
-                onChange={handleChange("email")}
-              />
+        <div class="row">
+          <div class="col-lg-6">
+            <form className="m-5">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder={t("eqname")}
+                    name="name"
+                    onChange={handleChange("name")}
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPassword4"
+                    placeholder={t("eqemail")}
+                    name="email"
+                    onChange={handleChange("email")}
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputEmail4"
+                    placeholder={t("subject.label")}
+                    name="subject"
+                    onChange={handleChange("subject")}
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPassword4"
+                    placeholder={t("eqphone")}
+                    onChange={handleChange("phone")}
+                    name="phone"
+                  />
+                </div>
+              </div>
+              <div className="form-group ">
+                <textarea
+                  className="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder={t("subject.label")}
+                  onChange={handleChange("message")}
+                  name="message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark" onClick={handleClick}>
+                {t("sendus.label")}
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="m-5">
+              <p>
+                Address - I win Ceramic Corporate Office Pacific Business Park
+                Second floor Shop No. 249,250,251 8-A National Highway Near
+                Sunora Ceramic Morbi 363642
+              </p>
+              <a href="mailto:info@iwinceramic.com" className="contactus-icon">
+                <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
+                info@iwinceramic.com
+              </a>
+              <br />
+
+              <a href="tel:+919825289599" className="contactus-icon">
+                <FontAwesomeIcon className="mr-2" icon={faPhone} />
+                +9198252 89599
+              </a>
+              <br />
+              <a href="tel:+919612833333" className="contactus-icon">
+                <FontAwesomeIcon className="mr-2" icon={faPhone} />
+                +919612833333
+              </a>
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                id="inputEmail4"
-                placeholder={t("subject.label")}
-                name="subject"
-                onChange={handleChange("subject")}
-              />
-            </div>
-            <div class="form-group col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                id="inputPassword4"
-                placeholder={t("eqphone")}
-                onChange={handleChange("phone")}
-                name="phone"
-              />
+          <div class="col-12">
+            <div className="p-5 text-center ml-auto m-5">
+              <Iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.86482907147!2d70.84853781491582!3d22.84448993504357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598c8f653d3b8b%3A0x9963198fb6fde971!2sPacific%20Business%20Park!5e0!3m2!1sen!2sin!4v1593420623896!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                frameborder="0"
+                style="border:0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></Iframe>
             </div>
           </div>
-          <div className="form-group ">
-            <textarea
-              className="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-              placeholder={t("subject.label")}
-              onChange={handleChange("message")}
-              name="message"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark" onClick={handleClick}>
-            {t("sendus.label")}
-          </button>
-        </form>
+        </div>
       </div>
 
       <Footer />

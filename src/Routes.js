@@ -1,16 +1,16 @@
 import React, { Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
-import EnquiryForm from "./components/EnquiryForm";
-import Card from "./components/Card";
-import TestPage from "./Pages/TestPage";
+import { Router } from "react-router";
 import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 import LaunguageSelector from "./components/LaunguageSelector";
+import { createBrowserHistory } from "history";
+const history = createBrowserHistory();
 
 export default function Routes(props) {
   return (
-    <BrowserRouter>
+    <BrowserRouter history={history}>
       <Switch>
         <Suspense fallback={null}>
           <Route path="/" component={LaunguageSelector}></Route>

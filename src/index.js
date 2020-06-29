@@ -4,8 +4,13 @@ import "./index.css";
 import Routes from "./Routes";
 
 import "./i18n.js";
+import { createBrowserHistory } from "history";
+const customHistory = createBrowserHistory();
 
-ReactDOM.render(<Routes />, document.getElementById("root"));
+ReactDOM.render(
+  <Routes history={customHistory} />,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -121,7 +121,11 @@ export default function EnquiryForm() {
             </div>
           </div>
 
-          <button type="submit" className="btn my-3" onClick={handleClick}>
+          <button
+            type="submit"
+            className="btn btn-dark my-3"
+            onClick={handleClick}
+          >
             {t("sendus.label")}
           </button>
         </form>

@@ -8,7 +8,7 @@ function Tiles({ className, title, subtitle, image }) {
         <img className="image" width={"100%"} src={image} />
         <div className="text-container ml-4 mt-3">
           <h4 className="title">{title}</h4>
-          <p className="description text-muted">{subtitle}</p>
+          <p className="description">{subtitle}</p>
         </div>
       </div>
     </div>

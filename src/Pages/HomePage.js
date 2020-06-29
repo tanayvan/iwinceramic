@@ -99,7 +99,7 @@ export default function HomePage() {
             <div class="support-container">
               <img src={support} alt="" className="support-image" />
               <h3 className="text-center my-3">24x7 support</h3>
-              <p className="m-2">
+              <p className="m-2 text-center">
                 We have 50+ people in trade and support department who are
                 always available to answer your queries, requests 24x7, round
                 the clock. Have queries?
@@ -109,20 +109,19 @@ export default function HomePage() {
           <div class="col-lg-4">
             <div class="support-container">
               <img src={quality} alt="" className="support-image" />
-              <h3 className="text-center my-3">Low Cost, Best Price</h3>
-              <p className="m-2">
-                Thanks to the economy of scale of our operations, we can
-                manufacture top grade tiles at low costs. We pass on this
-                benefit to you by offering the best tiles at competitively low
-                prices.
+              <h3 className="text-center my-3">Quality and testing</h3>
+              <p className="m-2 text-center">
+                Our super qualified technocrats and experienced R&D team make
+                sure that every tile that reaches you is of great quality. We do
+                not compromise on this aspect.
               </p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="support-container">
               <img src={lessprice} alt="" className="support-image" />
-              <h3 className="text-center my-3">24x7 support</h3>
-              <p className="m-2">
+              <h3 className="text-center my-3">Low Cost, Best Price</h3>
+              <p className="m-2 text-center">
                 Our super qualified technocrats and experienced R&D team make
                 sure that every tile that reaches you is of great quality. We do
                 not compromise on this aspect.

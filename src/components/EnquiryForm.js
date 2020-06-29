@@ -1,5 +1,17 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { notification } from "antd";
+
+const openNotification = () => {
+  notification.open({
+    message: "Notification Title",
+    description:
+      "This is the content of the notification. This is the content of the notification. This is the content of the notification.",
+    onClick: () => {
+      console.log("Notification Clicked!");
+    },
+  });
+};
 
 export default function EnquiryForm() {
   const { t, i18n } = useTranslation();
@@ -16,6 +28,7 @@ export default function EnquiryForm() {
   };
   const handleClick = (e) => {
     e.preventDefault();
+    openNotification();
     console.log(values);
     fetch("http://localhost:4000/enquiryform", {
       method: "POST",
@@ -31,6 +44,9 @@ export default function EnquiryForm() {
       }),
     })
       .then((response) => {
+        return response.json();
+      })
+      .then(() => {
         setValues({
           name: "",
           email: "",
@@ -38,7 +54,6 @@ export default function EnquiryForm() {
           pricelist: "",
           details: "",
         });
-        return response.json();
       })
       .catch((error) => console.log(error));
   };
@@ -56,6 +71,7 @@ export default function EnquiryForm() {
               placeholder={t("eqname")}
               name="name"
               onChange={handleChange("name")}
+              value={name}
             />
           </div>
           <div className="form-group">
@@ -67,6 +83,7 @@ export default function EnquiryForm() {
               placeholder={t("eqemail")}
               onChange={handleChange("email")}
               name="email"
+              value={email}
             />
           </div>
           <div className="form-group">
@@ -77,6 +94,7 @@ export default function EnquiryForm() {
               placeholder={t("eqphone")}
               onChange={handleChange("phone")}
               name="phone"
+              value={phone}
             />
           </div>
           <div className="form-group">
@@ -87,6 +105,7 @@ export default function EnquiryForm() {
               placeholder={t("eqpricelistdetails")}
               onChange={handleChange("pricelist")}
               name="pricelist"
+              value={pricelist}
             />
             <div className="form-group mt-3">
               <textarea
@@ -96,7 +115,9 @@ export default function EnquiryForm() {
                 placeholder={t("eqdetails")}
                 onChange={handleChange("details")}
                 name="details"
-              ></textarea>
+              >
+                {details}
+              </textarea>
             </div>
           </div>
 

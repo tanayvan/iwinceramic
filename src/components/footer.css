@@ -31,6 +31,36 @@ ul li {
   margin-left: 10px;
 }
 /* navbar */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1 solid black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
 .navbar {
   box-shadow: 0 5px 5px -6px #999;
 }
@@ -89,12 +119,13 @@ ul li {
   position: relative;
   width: fit-content;
 }
-.heading::before {
+.heading::after {
   position: absolute;
   content: "";
   height: 4px;
   border-radius: 5px;
-  bottom: 0;
-  width: 80%;
+  bottom: -16px;
+  left: 2px;
+  width: 67%;
   background: rgb(237, 28, 36);
 }

@@ -33,9 +33,7 @@ export default function HomePage() {
       </div>
       {/* our Products */}
       <div className="container mt-5">
-        <h1 className="display-5 text-muted text-center">
-          {t("ourproduct.label")}
-        </h1>
+        <h1 className="display-5 text-center">{t("ourproduct.label")}</h1>
         <div className="row my-5 ">
           <div className="col-lg-4 col-md-6">
             <Tiles

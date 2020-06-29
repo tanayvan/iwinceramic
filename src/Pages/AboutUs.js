@@ -8,7 +8,7 @@ export default function AboutUs() {
   const { t, i18n } = useTranslation();
   return (
     <Base>
-      <div className="container">
+      <div className="container my-5">
         <div className="row">
           <div
             class="col-lg-12 my-5"

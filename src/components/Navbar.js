@@ -5,10 +5,6 @@ import { Link, withRouter } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 
-export default function Navbar() {
-
-
-
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
     return { color: "#ed1c24" };
@@ -18,7 +14,6 @@ const currentTab = (history, path) => {
 };
 
 const Navbar = ({ history }) => {
-
   const { t, i18n } = useTranslation();
   return (
     <div>

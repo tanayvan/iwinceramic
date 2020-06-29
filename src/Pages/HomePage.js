@@ -8,11 +8,18 @@ import lessprice from "../assets/lessprice.png";
 import Tiles from "../components/Card";
 import "../components/footer.css";
 import { useTranslation } from "react-i18next";
+import WeAre from "../components/WeAre";
 
 export default function HomePage() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <Base>
+      {/* <div className="banner">
+        <img src={banner3} className="banner-Image"></img>
+        <div className="welcome">
+          Welcome to <br />I win Ceramic
+        </div>
+      </div> */}
       <div className="container">
         <div className="row mt-5">
           <div className="col-lg-6 mt-5">
@@ -77,6 +84,11 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <div className="weare">
+        <div className="container">
+          <h1 className="display-5 text-muted text-center">We Are</h1>
+          <WeAre />
+
 
       {/* 24*7 support */}
       <div class="container my-4">

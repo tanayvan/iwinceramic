@@ -4,7 +4,10 @@ import { Link, withRouter } from "react-router-dom";
 
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
-import LaunguageSelector from "./LaunguageSelector";
+
+export default function Navbar() {
+
+
 
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
@@ -15,6 +18,7 @@ const currentTab = (history, path) => {
 };
 
 const Navbar = ({ history }) => {
+
   const { t, i18n } = useTranslation();
   return (
     <div>
@@ -24,7 +28,7 @@ const Navbar = ({ history }) => {
             src={logo}
             alt=""
             style={{
-              height: "5rem",
+              height: "4rem",
             }}
           />
         </Link>

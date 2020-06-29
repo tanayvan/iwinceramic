@@ -1,5 +1,7 @@
 import React from "react";
 import i18next from "i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function LaunguageSelector() {
   const changeLaunguage = (e) => {
@@ -19,10 +21,12 @@ export default function LaunguageSelector() {
           </select>
         </div>
         <a className="ml-3" href="mailto:info@iwinceramic.com">
-          info@iwinceramic.com
+          <FontAwesomeIcon className="mr-2" icon={faEnvelope} />
+          <span className="mail">info@iwinceramic.com</span>
         </a>
         <a className="ml-3 " href="tel:+919612833333">
-          9612833333
+          <FontAwesomeIcon className="mr-2" icon={faPhone} />
+          <span className="phone"> 9612833333</span>
         </a>
       </div>
     </div>

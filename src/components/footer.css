@@ -25,7 +25,11 @@ li {
 .myfooter {
   background-color: rgb(39, 39, 39);
   color: white;
+  font-size: small;
   width: 100%;
+}
+.socialMedia-icon {
+  font-size: large;
 }
 ul li {
   margin-left: 10px;
@@ -61,9 +65,13 @@ ul li {
 .nav-link:hover::before {
   width: 80%;
 }
+.header-container {
+  font-size: small;
+}
 @media only screen and (max-width: 600px) {
-  .header-container {
-    flex-direction: column;
+  .mail,
+  .phone {
+    display: none;
   }
 }
 
@@ -97,4 +105,49 @@ ul li {
   bottom: 0;
   width: 80%;
   background: rgb(237, 28, 36);
+}
+
+/* banner css */
+.banner-Image {
+  width: 100%;
+  filter: brightness(50%);
+}
+.banner {
+  position: relative;
+}
+.welcome {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  text-shadow: 2px 2px rgb(237, 28, 36);
+  font-size: 4vw;
+  font-weight: bolder;
+  animation: textanim 3s ease 0.5s;
+  color: white;
+}
+@keyframes textanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.welcome:before {
+  content: "";
+  position: absolute;
+  animation: well 1s ease 0.5s;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background: rgb(143, 65, 66);
+  height: 0.5vw;
+}
+@keyframes well {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }

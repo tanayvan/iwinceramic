@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
-import LaunguageSelector from "./LaunguageSelector";
 export default function Navbar() {
   const { t, i18n } = useTranslation();
   return (
@@ -15,7 +14,7 @@ export default function Navbar() {
             src={logo}
             alt=""
             style={{
-              height: "5rem",
+              height: "4rem",
             }}
           />
         </Link>

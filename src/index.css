@@ -8,8 +8,10 @@
 
 a {
   color: white;
+  transition: all ease 0.5s;
 }
 
 a:hover {
-  color: white;
+  color: rgb(246, 91, 96);
+  text-decoration: none;
 }

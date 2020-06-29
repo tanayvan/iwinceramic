@@ -99,6 +99,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      {/* we are section */}
       <div className="weare">
         <div className="container">
           <h1 className="display-5 text-muted text-center">We Are</h1>

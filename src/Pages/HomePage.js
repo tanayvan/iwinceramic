@@ -2,6 +2,9 @@ import React from "react";
 import Base from "../components/Base";
 
 import banner from "../assets/banner.jpg";
+import support from "../assets/24support.png";
+import quality from "../assets/quality.png";
+import lessprice from "../assets/lessprice.png";
 import Tiles from "../components/Card";
 import "../components/footer.css";
 import { useTranslation } from "react-i18next";
@@ -40,9 +43,7 @@ export default function HomePage() {
       </div>
       {/* our Products */}
       <div className="container mt-5">
-        <h1 className="display-5 text-muted text-center">
-          {t("ourproduct.label")}
-        </h1>
+        <h1 className="display-5 text-center">{t("ourproduct.label")}</h1>
         <div className="row my-5 ">
           <div className="col-lg-4 col-md-6">
             <Tiles
@@ -87,6 +88,45 @@ export default function HomePage() {
         <div className="container">
           <h1 className="display-5 text-muted text-center">We Are</h1>
           <WeAre />
+
+
+      {/* 24*7 support */}
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="support-container">
+              <img src={support} alt="" className="support-image" />
+              <h3 className="text-center my-3">24x7 support</h3>
+              <p className="m-2">
+                We have 50+ people in trade and support department who are
+                always available to answer your queries, requests 24x7, round
+                the clock. Have queries?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="support-container">
+              <img src={quality} alt="" className="support-image" />
+              <h3 className="text-center my-3">Low Cost, Best Price</h3>
+              <p className="m-2">
+                Thanks to the economy of scale of our operations, we can
+                manufacture top grade tiles at low costs. We pass on this
+                benefit to you by offering the best tiles at competitively low
+                prices.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="support-container">
+              <img src={lessprice} alt="" className="support-image" />
+              <h3 className="text-center my-3">24x7 support</h3>
+              <p className="m-2">
+                Our super qualified technocrats and experienced R&D team make
+                sure that every tile that reaches you is of great quality. We do
+                not compromise on this aspect.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </Base>

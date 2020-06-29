@@ -6,10 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
-  faInstagramSquare,
-  faFacebookSquare,
-  faTwitterSquare,
-  faWhatsappSquare,
+  faFacebook,
+  faTwitter,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   const { t } = useTranslation();
@@ -28,16 +27,16 @@ const Footer = () => {
             />
             <p className="socialMedia-icon mt-4">
               <a href="#" className="mr-3">
-                <FontAwesomeIcon icon={faInstagramSquare} />
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a href="#" className="mr-3">
-                <FontAwesomeIcon icon={faFacebookSquare} />
+                <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a href="#" className="mr-3">
-                <FontAwesomeIcon icon={faTwitterSquare} />
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a href="#" className="mr-3">
-                <FontAwesomeIcon icon={faWhatsappSquare} />
+                <FontAwesomeIcon icon={faWhatsapp} />
               </a>
             </p>
           </div>
@@ -49,22 +48,22 @@ const Footer = () => {
                 <a href="#">Soluble Salt Nano Tile</a>
               </li>
               <li>
-                <a>Double Charged Porcelain/Vitrified Tile</a>
+                <a href="#">Double Charged Porcelain/Vitrified Tile</a>
               </li>
               <li>
-                <a>Digital Glazed Porcelain/Vitrified Tile</a>
+                <a href="#">Digital Glazed Porcelain/Vitrified Tile</a>
               </li>
               <li>
-                <a>Full Body Porcelain/Vitrified Tile</a>
+                <a href="#">Full Body Porcelain/Vitrified Tile</a>
               </li>
               <li>
-                <a>Parking Tile</a>
+                <a href="#">Parking Tile</a>
               </li>
               <li>
-                <a>Step Riser & Wood Look Tile</a>
+                <a href="#">Step Riser & Wood Look Tile</a>
               </li>
               <li>
-                <a>Ceramic Digital Wall Tile</a>
+                <a href="#">Ceramic Digital Wall Tile</a>
               </li>
             </ul>
           </div>
@@ -73,16 +72,16 @@ const Footer = () => {
             <h5 className="footer-heading">{t("weare.label")}</h5>
             <ul>
               <li>
-                <a>{t("importer.label")}</a>
+                <a href="#">{t("importer.label")}</a>
               </li>
               <li>
-                <a>{t("distributor.label")}</a>
+                <a href="#">{t("distributor.label")}</a>
               </li>
               <li>
-                <a>{t("builder.label")}</a>
+                <a href="#">{t("builder.label")}</a>
               </li>
               <li>
-                <a>{t("homeoffice.label")}</a>
+                <a href="#">{t("homeoffice.label")}</a>
               </li>
             </ul>
           </div>

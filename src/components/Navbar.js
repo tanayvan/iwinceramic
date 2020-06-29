@@ -7,9 +7,11 @@ import { useTranslation } from "react-i18next";
 
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
-    return { color: "#ed1c24" };
+    return {
+      color: "#ed1c24",
+    };
   } else {
-    return { color: "black" };
+    return {};
   }
 };
 

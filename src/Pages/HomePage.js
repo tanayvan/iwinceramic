@@ -10,6 +10,13 @@ import "../components/footer.css";
 import { useTranslation } from "react-i18next";
 import WeAre from "../components/WeAre";
 
+import product1 from "../assets/product1.jpg";
+import product2 from "../assets/product2.jpg";
+import product3 from "../assets/product3.jpg";
+import product4 from "../assets/product4.jpg";
+import product5 from "../assets/product5.jpg";
+import product6 from "../assets/product6.jpg";
+
 export default function HomePage() {
   const { t } = useTranslation();
   return (
@@ -49,24 +56,28 @@ export default function HomePage() {
         <div className="row my-5 ">
           <div className="col-lg-4 col-md-6">
             <Tiles
+              image={product1}
               title="Full Body Porcelain/Vitrified Tile"
               subtitle="Unique from Surface through Body"
             />
           </div>
           <div className="col-lg-4 col-md-6">
             <Tiles
+              image={product2}
               title="Double Charged Porcelain/Vitrified Tile"
               subtitle="Double protection with elegance."
             />
           </div>
           <div className="col-lg-4 col-md-6">
             <Tiles
+              image={product3}
               title="Digital Glazed Porcelain/Vitrified Tile"
               subtitle="Shimmering variety of glazed tiles."
             />
           </div>
           <div className="col-lg-4 col-md-6">
             <Tiles
+              image={product4}
               title="Soluble Salt Nano Tile"
               subtitle="Economic Floor Tile"
             />
@@ -74,12 +85,14 @@ export default function HomePage() {
 
           <div className="col-lg-4 col-md-6">
             <Tiles
+              image={product5}
               title="Parking Tile"
               subtitle="Tough as stone for parking and pavement."
             />
           </div>
           <div className="col-lg-4 col-md-6">
             <Tiles
+              image={product6}
               title="Ceramic Digital Wall Tile"
               subtitle="Add some glamour to your walls."
             />

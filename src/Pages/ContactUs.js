@@ -139,11 +139,18 @@ export default function ContactUs() {
               </p>
             </div>
           </div>
-          <div class="col-8">
-            <div className="p-5 text-center ml-auto m-5">
+          <div class="col-12">
+            <div
+              className="p-5 text-center "
+              style={{
+                display: "flex",
+                alignContent: "center",
+                justifyContent: "center",
+              }}
+            >
               <Iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.86482907147!2d70.84853781491582!3d22.84448993504357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39598c8f653d3b8b%3A0x9963198fb6fde971!2sPacific%20Business%20Park!5e0!3m2!1sen!2sin!4v1593420623896!5m2!1sen!2sin"
-                width="100%"
+                width="70%"
                 height="250"
                 frameborder="0"
                 style="border:0;"

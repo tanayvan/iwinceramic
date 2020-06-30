@@ -38,7 +38,7 @@ export default function HomePage() {
             </button>
           </div>
           <div className="col-lg-6 mt-5">
-            <div className="px-5" style={{ marginTop: 14 }}>
+            <div className="px-1" style={{ marginTop: 14 }}>
               <img
                 src={banner}
                 style={{ filter: "brightness(130%)" }}
